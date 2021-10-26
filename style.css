@@ -48,12 +48,12 @@ div #para:hover{
    font-size: 28px;
    transform:translateY(30px);
    transition-delay: .5sec;
-   box-shadow: 2px rgb(20, 15, 15);
+   box-shadow: 2px rgb(24, 20, 20);
    font-size: 25px;
 }
 
 div .rowtwo{
-    justify-content:space-around;
+    justify-content:space-between;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: space-around;
@@ -65,7 +65,7 @@ div .rowtwo{
 #one, 
 #two, 
 #three{
-    border: 2px rgb(134, 134, 194);
+    border: 2px rgb(118, 118, 163);
     box-shadow:15px 8px 16px 15px rgb(29, 26, 26);
 }
 #one:hover{
