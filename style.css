@@ -1,0 +1,233 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Merienda', cursive;
+    color: rgb(233, 6, 6);
+
+}
+.who{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(15, 14, 14);
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Merienda', cursive;
+
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Merienda', cursive;
+    color: rgb(233, 6, 6);
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Merienda', cursive;
+    color: rgb(233, 6, 6);
+}
+p{
+    font-size: 17px;
+    font-family: 'Lobster Two', cursive;
+
+}
+ul{
+    font-size: 17px;
+    font-family: 'Lobster Two', cursive;
+    
+}
+#para{
+   text-align: center;
+
+}
+div #para:hover{
+   background-color: silver;
+   color:rgb(146, 43, 43);
+   font-size: 28px;
+   transform:translateY(30px);
+   transition-delay: .5sec;
+   box-shadow: 2px rgb(20, 15, 15);
+   font-size: 25px;
+}
+
+div .rowtwo{
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    
+
+}
+
+
+#one, 
+#two, 
+#three{
+    border: 2px rgb(134, 134, 194);
+    box-shadow:15px 8px 16px 15px rgb(29, 26, 26);
+}
+#one:hover{
+    background-color: silver;
+    color:rgb(146, 43, 43);
+    font-size: 28px;
+    transform: translateY(30px);
+    transition-delay: 3sec;
+    box-shadow: 2px rgb(20, 15, 15);
+   
+
+}
+ #two:hover{
+    background-color: silver;
+    color:rgb(146, 43, 43);
+    font-size: 28px;
+    transform: translateY(30px);
+    transition-delay: 3sec;
+    box-shadow: 2px rgb(20, 15, 15);
+
+ }
+ #three:hover{
+    background-color: silver;
+    color:rgb(146, 43, 43);
+    font-size: 28px;
+    transform: translateY(30px);
+    transition-delay: 3sec;
+    box-shadow: 2px rgb(20, 15, 15);
+}
+/* Animation START HERE */
+.rowthree .childone{
+    height: 50%;
+    width: 50%;
+    animation: left-to-right 5s ease-in forwards infinite alternate;
+}
+.rowthree .childone:hover{
+    animation-play-state: paused;
+}
+ 
+@keyframes left-to-right{
+    0%{
+        
+        transform:translateX(0)
+
+    }
+    33%{
+        transform: translateY(100%);
+
+    }
+    50%{
+        
+        transform: translateY(100%);
+
+    }
+    66%{
+        transform: translateX(100%) translateY(100%);
+    }
+    100%{
+    
+        transform: translateX(100%);
+
+    }
+}
+.rowthree .childtwo{
+    height: 50%;
+    width: 50%;
+    animation: right-to-left 5s ease-in forwards infinite alternate;
+}
+.rowthree .childtwo:hover{
+    animation-play-state: paused;
+}
+ 
+@keyframes right-to-left{
+    0%{
+        
+        transform:translateX(0)
+
+    }
+    33%{
+        transform: translateY(100%);
+
+    }
+    50%{
+        
+        transform: translateY(100%);
+
+    }
+    66%{
+        transform: translateX(100%) translateY(100%);
+    }
+    100%{
+    
+        transform: translateX(100%);
+
+    }
+}
+/* Animation END HERE */
+
+/* @media screen START HERE */
+@media screen and (max-width:740px) and (min-width:340px){
+    body{
+      background-color: rgb(71, 68, 71);
+      background-image: url("image/centennial-logo-banner-final-greyyears.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:center;
+      background-attachment: fixed;
+
+      margin: 25px 6%;
+    }
+   
+    /*here*/ 
+    label{
+      display: block;
+    }
+  
+    .menu{
+      text-align: left;
+      width: 100%;
+      display:none;
+      font-size: 25px;
+    }
+  
+    .menu a {
+      display: block;
+      margin:0 10px;
+      font-size: 25px;
+    }
+  
+    #toggle:checked + .menu{
+      display: block;
+      position: absolute;
+      width: 30%;
+    }
+}
+/*break two*/
+
+@media screen and (max-width:1039px) and (min-width:741px) {
+  body{
+    background-color: rgb(38, 73, 56);
+    background-image: url("image/ccj.Truck_071711_LR-99-2016-12-16-09-22.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    margin: 25px 8%;
+  }
+ 
+}
+/*break three*/
+@media screen and (max-width:1800px) and (min-width:1040px) {
+  body{
+    background-color: rgb(49, 62, 75);
+    background-image: url("image/manh-cr-england-en.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    margin: 25px 10%;
+    
+  }
+  
+  
+}
+/* @media screen END HERE */
